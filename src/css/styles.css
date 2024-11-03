@@ -408,7 +408,7 @@ body {
     color: var(--color-white);
 }
 
-.button--disabled {
+.button:disabled{
     background-color: var(--color-dark-gray);
     border-color: var(--color-dark-gray);
     color: var(--color-gray);
@@ -443,7 +443,7 @@ body {
 
 .email:hover,
 .email__button:hover,
-.button--disabled:hover {
+.button:disabled:hover {
     scale: none;
 }
 
