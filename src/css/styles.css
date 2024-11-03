@@ -10,7 +10,8 @@
 /*Variables CSS*/
 :root {
     --font-family: '';
-    --font-family: "Lato", Arial, Helvetica, sans-serif;;
+    --font-family: "Lato", Arial, Helvetica, sans-serif;
+    ;
     --font-size-p: 16px;
     --font-size-h1: 32px;
     --font-size-h2: 22px;
@@ -151,23 +152,23 @@ body {
         "presentacion presentacion"
         "formacion experiencia"
         "tecnologias tecnologias";
-        gap: var(--gap-big);
+    gap: var(--gap-big);
 
 }
 
-#presentacion{
+#presentacion {
     grid-area: presentacion;
 }
 
-#formacion{
+#formacion {
     grid-area: formacion;
 }
 
-#experiencia{
+#experiencia {
     grid-area: experiencia;
 }
 
-#tecnologias{
+#tecnologias {
     grid-area: tecnologias;
 }
 
@@ -201,7 +202,7 @@ body {
     gap: var(--gap-small);
 }
 
-.section__card--padding-bottom{
+.section__card--padding-bottom {
     padding-bottom: var(--pading-small);
 }
 
@@ -253,26 +254,26 @@ body {
     box-shadow: var(--box-shadow);
 }
 
-.card--row{
+.card--row {
     flex-direction: row;
 }
 
-.card--max-width{
+.card--max-width {
     width: 100%;
 }
 
-.card--tech{
+.card--tech {
     width: 60px;
     height: 50px;
     text-align: center;
 }
 
-.card--about{
+.card--about {
     padding: var(--pading-normal);
     text-align: left;
 }
 
-.about__description{
+.about__description {
     width: var(--width-one-column);
 }
 
@@ -308,13 +309,13 @@ body {
     gap: var(--gap-normal);
 }
 
-.tecnologias--row{
+.tecnologias--row {
     display: flex;
     flex-direction: row;
     gap: var(--gap-medium);
 }
 
-.tecnologia{
+.tecnologia {
     /*Flex*/
     display: flex;
     flex-direction: row;
@@ -363,15 +364,15 @@ body {
     line-height: 140%;
 }
 
-.text--bold{
+.text--bold {
     font-weight: 600;
 }
 
-.text--small{
+.text--small {
     font-size: var(--font-size-buttons);
 }
 
-.text--min-width{
+.text--min-width {
     min-width: fit-content;
 }
 
@@ -390,6 +391,8 @@ body {
     background: var(--color-white);
     box-shadow: var(--box-shadow);
     cursor: pointer;
+
+    transition: all 300ms linear;
 }
 
 .button--large {
@@ -412,6 +415,18 @@ body {
     cursor: default;
 }
 
+.button--shadow{
+    box-shadow: none;
+}
+
+.button:hover {
+    scale: 1.05;
+}
+
+.button:active {
+    scale: 1;
+}
+
 .email {
     padding: 0px;
 }
@@ -424,4 +439,19 @@ body {
 
 .email__button {
     border-radius: 0px;
+}
+
+.email:hover,
+.email__button:hover,
+.button--disabled:hover {
+    scale: none;
+}
+
+#dark-mode {
+    cursor: pointer;
+    transition: all 300ms linear;
+}
+
+#button-dark-mode:hover #dark-mode {
+    rotate: 44deg;
 }
