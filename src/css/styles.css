@@ -163,10 +163,12 @@ body {
 
 #formacion {
     grid-area: formacion;
+    height: 100%;
 }
 
 #experiencia {
     grid-area: experiencia;
+    height: 100%;
 }
 
 #tecnologias {
@@ -458,6 +460,44 @@ body {
 }
 
 /*Responsive*/
+
+@media (width < 1312px) {
+    #sobre-mi{
+        padding: 0px var(--pading-big);
+        gap: var(--gap-normal);
+    }
+
+    #sobre-mi #presentacion .about__description{
+        width: 100%;
+    }
+}
+
+
+@media (width < 1090px) {
+    #sobre-mi{
+        gap: var(--gap-small);
+    }
+    
+    #sobre-mi #presentacion .section__image{
+        display: none;
+    }
+}
+
+@media (width < 1050px) {
+    #sobre-mi{
+        grid-template-areas: 
+        "presentacion presentacion" 
+        "formacion formacion"
+        "experiencia experiencia" 
+        "tecnologias tecnologias";
+    }
+
+    #sobre-mi #tecnologias{
+        display: none
+    }
+}
+
+
 @media (width < 780px) {
     #inicio,
     #contacto{
@@ -487,10 +527,13 @@ body {
         overflow: hidden;
         padding-left: 10px;
     }
+
+    #sobre-mi .text--min-width{
+        display: none;
+    }
 }
 
 @media (width < 460px){
-
     #proyectos .card__main{
         text-align: center;
     }
