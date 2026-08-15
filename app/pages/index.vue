@@ -14,7 +14,7 @@
       <template #footer>
         <UContainer class="flex justify-center gap-6">
           <UButton class="cursor-pointer" to="#projects" color="primary" variant="outline" size="lg">Proyectos</UButton>
-          <UButton class="cursor-pointer" to="/about" color="neutral" variant="outline" size="lg">Contacto</UButton>
+          <UButton class="cursor-pointer" to="#contact" color="neutral" variant="outline" size="lg">Contacto</UButton>
         </UContainer>
       </template>
     </UPageCTA>
