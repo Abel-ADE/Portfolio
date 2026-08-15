@@ -123,7 +123,7 @@
           </template>
         </UInput>
         <div class="w-full flex gap-4 justify-between">
-          <UButton :ui="{base: 'w-full justify-center'}"  to="https://www.linkedin.com/in/abel-iglesias-moure/" target="_blank" icon="streamline:linkedin"
+          <UButton :ui="{base: 'w-full items-center justify-center align-middle'}"  to="https://www.linkedin.com/in/abel-iglesias-moure/" target="_blank" icon="streamline:linkedin"
             size="md" label="Linkedin" variant="outline"></UButton>
         </div>
       </div>
