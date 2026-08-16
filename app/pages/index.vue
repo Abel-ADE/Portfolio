@@ -64,7 +64,7 @@
         </UCard>
         <UCard :ui="{ root: 'text-center' }">
           <template #header>
-            <UBadge label="Diseño y maquetación Web" color="warning" variant="soft"/>
+            <UBadge label="Diseño y Maquetación Web" color="warning" variant="soft"/>
           </template>
           <template #default>
             <div class="flex flex-col gap-4">
