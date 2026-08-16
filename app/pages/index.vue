@@ -107,6 +107,7 @@
           }
         },
       ]" />
+      <UButton :ui="{base: 'w-fit mx-auto'}" to="/pdf/abel_iglesias_moure.pdf" target="_blank" icon="tabler:file-cv" size="md" color="neutral" variant="outline">Ver Currículum</UButton>
     </UPageSection>
 
     <UPageSection id="contact" title="Contacto" description="¿Hablamos?"
@@ -115,16 +116,16 @@
         <UInput readonly v-model="value"
           :ui="{ trailing: 'pr-0.5', root: 'w-full', base: 'text-center' }">
           <template v-if="value?.length" #trailing>
-            <UTooltip text="Copy to clipboard" :content="{ side: 'top' }">
               <UButton :color="copied ? 'success' : 'neutral'" variant="link" size="sm"
                 :icon="copied ? 'i-lucide-copy-check' : 'i-lucide-copy'" aria-label="Copy to clipboard"
-                @click="copy(value)" />
-            </UTooltip>
+                @click="copy(value); toast.add({title: '¡Correo electrónico copiado!', description: 'Ahora puedes ir a tu gestor de correo y enviarme un e-mail. Gracias por visitar mi portfolio.', icon:'i-lucide-mail', duration:5000})" />
           </template>
         </UInput>
         <div class="w-full flex gap-4 justify-between">
           <UButton :ui="{base: 'w-full items-center justify-center align-middle'}"  to="https://www.linkedin.com/in/abel-iglesias-moure/" target="_blank" icon="streamline:linkedin"
-            size="md" label="Linkedin" variant="outline"></UButton>
+            size="md" label="Linkedin" color="neutral" variant="outline"></UButton>
+            <UButton :ui="{base: 'w-full items-center justify-center align-middle'}"  to="https://www.linkedin.com/in/abel-iglesias-moure/" target="_blank" icon="i-lucide-github"
+            size="md" label="Github" color="neutral" variant="outline"></UButton>
         </div>
       </div>
     </UPageSection>
@@ -133,6 +134,8 @@
 
 <script setup lang="ts">
 import { useClipboard } from '@vueuse/core'
+
+const toast = useToast()
 
 const value = ref('abeliglesiasmoure@gmail.com')
 
