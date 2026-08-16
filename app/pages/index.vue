@@ -85,6 +85,29 @@
             </div>
           </template>
         </UCard>
+        <UCard :ui="{ root: 'text-center' }">
+          <template #header>
+            <UBadge label="Ejercicio Vue 3" variant="soft"/>
+          </template>
+          <template #default>
+            <div class="flex flex-col gap-4">
+              <h2 class="text-2xl font-bold">Blog Multilenguaje</h2>
+              <p class="text-sm">Un pequeño ejercicio de un blog multilenguaje hecho con vue y el paquete I18n. Perfecto para aprender nuevos conceptos.</p>
+              <div class="flex justify-center gap-3">
+                <MyPopoverIcon size="size-5" nameIcon="vscode-icons:file-type-vscode" textContent="Visual Studio Code" />
+                <MyPopoverIcon size="size-5" nameIcon="vscode-icons:file-type-html" textContent="HTML 5" />
+                <MyPopoverIcon size="size-5" nameIcon="vscode-icons:file-type-css2" textContent="CSS 3" />
+                <MyPopoverIcon size="size-5" nameIcon="vscode-icons:file-type-vue" textContent="Vue" />
+              </div>
+            </div>
+          </template>
+          <template #footer>
+            <div class="flex justify-center gap-4">
+              <UButton icon="i-lucide:app-window" size="md" to="https://blog-vue-3.vercel.app/" target="_blank" color="primary" variant="outline">Ver proyecto</UButton>
+              <UButton icon="i-lucide-github" size="md" to="https://github.com/Abel-ADE/Blog-Vue-3" target="_blank" color="neutral" variant="outline">Ver repositorio</UButton>
+            </div>
+          </template>
+        </UCard>
       </UPageColumns>
     </UPageSection>
 
