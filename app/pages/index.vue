@@ -13,7 +13,7 @@
       </template>
       <template #footer>
         <UContainer class="flex justify-center gap-6">
-          <UButton class="cursor-pointer" to="#projects" color="primary" variant="outline" size="lg">Proyectos</UButton>
+          <UButton class="cursor-pointer" to="#projects" color="primary" size="lg">Proyectos</UButton>
           <UButton class="cursor-pointer" to="#contact" color="neutral" variant="outline" size="lg">Contacto</UButton>
         </UContainer>
       </template>
@@ -57,14 +57,14 @@
           </template>
           <template #footer>
             <div class="flex justify-center gap-4">
-              <UButton icon="i-lucide:app-window" size="md" to="https://nuxt-ui4-n6o2p0zgy-abel-ades-projects.vercel.app/" target="_blank" color="primary" variant="outline">Ver proyecto</UButton>
+              <UButton icon="i-lucide:app-window" size="md" to="https://nuxt-ui4-n6o2p0zgy-abel-ades-projects.vercel.app/" target="_blank" color="primary" variant="solid">Ver proyecto</UButton>
               <UButton icon="i-lucide-github" size="md" to="https://github.com/Abel-ADE/NuxtUi4/" target="_blank" color="neutral" variant="outline">Ver repositorio</UButton>
             </div>
           </template>
         </UCard>
         <UCard :ui="{ root: 'text-center' }">
           <template #header>
-            <UBadge label="Diseño y maquetación Web" variant="soft"/>
+            <UBadge label="Diseño y maquetación Web" color="warning" variant="soft"/>
           </template>
           <template #default>
             <div class="flex flex-col gap-4">
@@ -80,14 +80,14 @@
           </template>
           <template #footer>
             <div class="flex justify-center gap-4">
-              <UButton icon="i-lucide:app-window" size="md" to="https://barber-shop-galician-rustic-j2htzq9kh-abel-ades-projects.vercel.app/" target="_blank" color="primary" variant="outline">Ver proyecto</UButton>
+              <UButton icon="i-lucide:app-window" size="md" to="https://barber-shop-galician-rustic-j2htzq9kh-abel-ades-projects.vercel.app/" target="_blank" color="warning" variant="solid">Ver proyecto</UButton>
               <UButton icon="i-lucide-github" size="md" to="https://github.com/Abel-ADE/Barber-Shop-Galician-Rustic" target="_blank" color="neutral" variant="outline">Ver repositorio</UButton>
             </div>
           </template>
         </UCard>
         <UCard :ui="{ root: 'text-center' }">
           <template #header>
-            <UBadge label="Ejercicio Vue 3" variant="soft"/>
+            <UBadge label="Ejercicio Vue 3" variant="soft" color="neutral"/>
           </template>
           <template #default>
             <div class="flex flex-col gap-4">
@@ -103,7 +103,7 @@
           </template>
           <template #footer>
             <div class="flex justify-center gap-4">
-              <UButton icon="i-lucide:app-window" size="md" to="https://blog-vue-3.vercel.app/" target="_blank" color="primary" variant="outline">Ver proyecto</UButton>
+              <UButton icon="i-lucide:app-window" size="md" to="https://blog-vue-3.vercel.app/" target="_blank" color="neutral" variant="solid">Ver proyecto</UButton>
               <UButton icon="i-lucide-github" size="md" to="https://github.com/Abel-ADE/Blog-Vue-3" target="_blank" color="neutral" variant="outline">Ver repositorio</UButton>
             </div>
           </template>
@@ -146,7 +146,7 @@
         },
       ]" />
       <UButton :ui="{ base: 'w-fit mx-auto' }" to="/pdf/abel_iglesias_moure.pdf" target="_blank" icon="tabler:file-cv"
-        size="md" color="neutral" variant="outline">Ver Currículum</UButton>
+        size="md" color="neutral" variant="outline">Ver currículum</UButton>
     </UPageSection>
 
     <UPageSection id="contact" title="Contacto" description="¿Hablamos?"
