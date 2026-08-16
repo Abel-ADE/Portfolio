@@ -1,7 +1,7 @@
 <template>
   <UHeader :toggle="false">
     <template #left>
-      <UAvatar class="mr-2" size="sm" loading="lazy" src="img/profile.png" />
+      <UAvatar class="hidden md:inline mr-2" size="sm" loading="lazy" src="img/profile.png" />
       <NuxtLink to="/">
         <p class="text-lg">Abel Iglesias Moure</p>
       </NuxtLink>
