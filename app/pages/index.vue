@@ -57,7 +57,7 @@
           </template>
           <template #footer>
             <div class="flex justify-center gap-4">
-              <UButton icon="i-lucide:app-window" size="md" to="https://nuxt-ui4-n6o2p0zgy-abel-ades-projects.vercel.app/" target="_blank" color="primary" variant="solid">Ver proyecto</UButton>
+              <UButton icon="i-lucide:app-window" size="md" to="nuxt-ui4.vercel.app" target="_blank" color="primary" variant="solid">Ver proyecto</UButton>
               <UButton icon="i-lucide-github" size="md" to="https://github.com/Abel-ADE/NuxtUi4/" target="_blank" color="neutral" variant="outline">Ver repositorio</UButton>
             </div>
           </template>
@@ -80,7 +80,7 @@
           </template>
           <template #footer>
             <div class="flex justify-center gap-4">
-              <UButton icon="i-lucide:app-window" size="md" to="https://barber-shop-galician-rustic-j2htzq9kh-abel-ades-projects.vercel.app/" target="_blank" color="warning" variant="solid">Ver proyecto</UButton>
+              <UButton icon="i-lucide:app-window" size="md" to="https://barber-shop-galician-rustic.vercel.app/" target="_blank" color="warning" variant="solid">Ver proyecto</UButton>
               <UButton icon="i-lucide-github" size="md" to="https://github.com/Abel-ADE/Barber-Shop-Galician-Rustic" target="_blank" color="neutral" variant="outline">Ver repositorio</UButton>
             </div>
           </template>
